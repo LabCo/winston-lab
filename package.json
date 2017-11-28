@@ -1,7 +1,7 @@
 {
-  "name": "ts-module-starter",
+  "name": "winston-lab",
   "version": "1.0.0",
-  "description": "Template for creating typescript modules",
+  "description": "Some helpers for using winston",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -24,11 +24,20 @@
         "tsConfigFile": "tsconfig.json"
       }
     },
-    "moduleFileExtensions": [ "ts", "js"],
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
     "transform": {
       "^.+\\.(ts)$": "./node_modules/ts-jest/preprocessor.js"
     },
-    "testMatch": [ "**/tests/**/*.test.(ts|js)" ],
+    "testMatch": [
+      "**/tests/**/*.test.(ts|js)"
+    ],
     "testEnvironment": "node"
+  },
+  "dependencies": {
+    "@types/winston": "^2.3.7",
+    "winston": "^2.4.0"
   }
 }

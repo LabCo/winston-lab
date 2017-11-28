@@ -1,10 +1,12 @@
-import {test} from "../lib"
+import {LabLogger} from "../lib"
 import {} from "jest"
 
 describe("sample test", () => {
 
+  const logger = LabLogger.create("TEST", "info")
+
   it("should do something", () => {
-    expect( test("foo") ).toEqual("foo")
+    logger.info("this is a test")
   })
 
 })
