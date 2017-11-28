@@ -2,8 +2,8 @@
   "name": "winston-lab",
   "version": "1.0.0",
   "description": "Some helpers for using winston",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/lib/index.js",
+  "types": "dist/lib/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "jest"
