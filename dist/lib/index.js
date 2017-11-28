@@ -5,7 +5,7 @@ var LabLogger;
 (function (LabLogger) {
     function createFromClass(clazz, logLevel = 'info') {
         const streamName = clazz.constructor.name;
-        return create(streamName);
+        return create(streamName, logLevel);
     }
     LabLogger.createFromClass = createFromClass;
     function create(streamName, logLevel = 'info') {

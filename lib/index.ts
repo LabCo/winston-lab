@@ -6,7 +6,7 @@ export module LabLogger {
   
   export function createFromClass(clazz: any, logLevel: string = 'info') {
     const streamName = clazz.constructor.name as string
-    return create(streamName)
+    return create(streamName, logLevel)
   }
 
   export function create(streamName: string, logLevel: string = 'info') {
